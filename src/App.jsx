@@ -1,5 +1,6 @@
 import { useState, useCallback,useEffect, useRef } from 'react'
 import './App.css'
+import background from "C:/Users/dhanraj.mohite/React Project/Password-Generator/public/background.jpg";
 
 function App() {
   const [length, setLength] = useState(8)
@@ -40,7 +41,10 @@ function App() {
         alignItems: 'center',
         justifyContent: 'center',
         height: '100vh',
-        margin:'auto'
+        margin:'auto',
+        backgroundImage :`url(${background})`,
+        backgroundSize : 'cover',
+        backgroundRepeat : 'no-repeat'
       }}>
         <div className='w-full max-w-md mx-auto shadow-md rounded-lg px-4 py-3 my-8 text-orange-500 bg-gray-800'>
           <h1 className='text-white text-center my-3'>Password Generator <div style={{fontSize: "10px",textAlign: "right",
